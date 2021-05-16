@@ -1,0 +1,15 @@
+<p>cwnfdetails works!</p>
+<div>
+    <button mat-raised-button color="primary"  type="submit" (click)="CheckNoFaculty()">CheckNoFacultyDetails</button>
+    <table *ngIf="show" border=1>
+        <thead>
+            <tr>
+                <th>CourseName</th>
+            </tr>
+        </thead>
+        <tr *ngFor="let cwnf of result">
+    <!-- <div *ngFor="let crs of Courses"> -->
+        <td> {{cwnf}} </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,59 @@
+
+<div>
+    <p>cou-details works!</p>
+    <button mat-raised-button color="primary"  type="submit" (click)="Checkcourses()">CheckCourses</button></div>
+    <table *ngIf="show" border=1>
+        <thead>
+            <tr>
+                <th>courseId</th>
+                <th>courseName</th>
+                <th>durationHours</th>
+                <th>passScore</th>
+                <th>instructorId</th>
+            </tr>
+        </thead>
+        <tr *ngFor="let crs of Courses">
+    <!-- <div *ngFor="let crs of Courses"> -->
+        <td> {{crs.courseId}}</td>
+        <td>{{crs.courseName}}</td>
+        <td>{{crs.durationHours}}</td>
+        <td> {{crs.passScore}}</td>
+            <td> {{crs.instructorId}} </td>
+        </tr>
+    </table>
+        
+    <!-- </div> -->
+
+    <!-- <body ng-app="myApp" ng-controller="ListController">
+        <style>
+    body {
+        margin: 2%;
+        font-size: 120%;
+    }
+      
+    th,
+    td {
+        padding: 20px;
+    }
+</style>
+        <h1>Most Grand Slam Winners - Men Tennis</h1>
+        <table border=1>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Country</th>
+                    <th>Grand Slams</th>
+                    <th>Active</th>
+                </tr>
+            </thead>
+            <tr ng-repeat="item in itemsDetails">
+                <td> {{item.sno}} </td>
+                <td> {{item.name}} </td>
+                <td> {{item.country}} </td>
+                <td> {{item.grandslams}} </td>
+                <td> {{item.active}} </td>
+            </tr>
+        </table>
+      
+    </body> -->

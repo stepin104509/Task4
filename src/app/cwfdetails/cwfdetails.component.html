@@ -1,0 +1,20 @@
+<p>cwfdetails works!</p>
+<div>
+    <button mat-raised-button color="primary"  type="submit" (click)="CheckDetails()">CheckDetails</button>
+    <table *ngIf="show" border=1>
+        <thead>
+            <tr>
+                <th>CourseName</th>
+                <th>FacultyName</th>
+                <th>FacultyMobile</th>
+            </tr>
+        </thead>
+        <tr *ngFor="let cwf of result">
+    <!-- <div *ngFor="let crs of Courses"> -->
+        <td> {{cwf.courseName}} </td>
+        <td>{{cwf.facultyName}}</td>
+        <td>{{cwf.facultyMobile}}</td>
+        
+        </tr>
+    </table>
+</div>

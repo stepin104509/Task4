@@ -1,0 +1,25 @@
+<p>fac-details works!</p>
+<div>
+    <button mat-raised-button color="primary"  type="submit" (click)="CheckFaculty()">CheckFaculty</button>
+    <table *ngIf="show" border=1>
+        <thead>
+            <tr>
+                <th>facultyId</th>
+                <th>facultyName</th>
+                <th>facultyMobile</th>
+                <th>facultyEmail</th>
+                <th>highestQualification</th>
+                <th>workLocation</th>
+            </tr>
+        </thead>
+        <tr *ngFor="let fct of Faculty">
+    <!-- <div *ngFor="let crs of Courses"> -->
+        <td> {{fct.facultyId}}</td>
+        <td>{{fct.facultyName}}</td>
+        <td>{{fct.facultyMobile}}</td>
+        <td> {{fct.facultyEmail}}</td>
+        <td> {{fct.highestQualification}} </td>
+        <td> {{fct.workLocation}} </td>
+        </tr>
+    </table>
+</div>
